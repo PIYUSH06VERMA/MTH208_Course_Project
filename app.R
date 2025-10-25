@@ -138,7 +138,8 @@ ui<- page_navbar(
     )
   ),
     #options for various plots
-  tabPanel(title = "Dataset")
+  tabPanel(title = "Dataset"),
+  tabPanel(title="About")
 )
 
 
