@@ -90,7 +90,7 @@ ui<- page_navbar(
               style = "font-size:15px; color:#444444;")
           ),
           card_footer(
-            em(""),
+            em("Where numbers reveal nations’ stories"),
             style = "text-align:center; color:gray;"
           )
         )
@@ -321,7 +321,7 @@ ui<- page_navbar(
       
       br(),
       div(style = "text-align:center; color:gray; font-style:italic;",
-          "Department of Economics and Statistics | 2025")
+          "Where numbers reveal nations’ stories")
     )
   )
 )
