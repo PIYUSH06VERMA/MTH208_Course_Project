@@ -19,8 +19,8 @@ ui<- page_navbar(
     primary = "green",
     "navbar-bg"="green",
   ),
-  #introduction statements to be added
-   # TAB 1: INTRODUCTION
+  
+   #Introduction tab
   # -------------------------------------------------------------------
   tabPanel(
     title = "Introduction",
@@ -60,7 +60,7 @@ ui<- page_navbar(
       
       br(),
       
-      # Highlight cards (objectives in flowing style)
+      # Objectives
       fluidRow(
         column(
           width = 12,
@@ -213,8 +213,8 @@ ui<- page_navbar(
     #options for various plots
   tabPanel(title = "Dataset")
 ),
-# TAB 4: ABOUT THE PROJECT
-  # -------------------------------------------------------------------
+# About Tab
+
   tabPanel(
     title = "About the Project",
     icon = icon("book-open"),
@@ -231,7 +231,7 @@ ui<- page_navbar(
           p("In an interconnected world, economic health is often reflected through indicators such as GDP, inflation, unemployment, and life expectancy. 
              Yet, understanding how these variables interact across countries and over time remains a complex task.", style = "font-size:16px;"),
           p("This project aims to simplify that complexity. By combining statistical modeling with visual analytics, 
-             the Macroeconomic Analyzer provides a structured view of global economic performance from 2015 to 2023—highlighting 
+             the Macroeconomic Analyzer provides a structured view of global economic performance from 2015 to 2023 highlighting 
              how regions evolved, responded to global shocks like COVID-19, and how key macroeconomic relationships 
              such as the Preston Curve and Phillips Curve hold in recent years.", style = "font-size:16px;")
         )
@@ -296,7 +296,7 @@ ui<- page_navbar(
             tags$li("Enhanced visualization and storytelling skills through R Shiny app development."),
             tags$li("Applied statistical and econometric reasoning to interpret real-world data patterns.")
           ),
-          p("Overall, the project bridges theory with practice — transforming raw economic data into an 
+          p("Overall, the project bridges theory with practice transforming raw economic data into an 
              interactive analytical tool for exploration and insight generation.", style = "font-size:16px;")
         )
       ),
@@ -309,9 +309,10 @@ ui<- page_navbar(
                         style = "font-size:20px; font-weight:600; color:#1b5e20;")),
         card_body(
           tags$ul(
-            tags$li(a("World Bank Open Data", href = "https://data.worldbank.org/", target = "_blank")),
+            
             tags$li(a("WDI R Package Documentation", href = "https://cran.r-project.org/web/packages/WDI/index.html", target = "_blank")),
             tags$li(a("World Happiness Report", href = "https://worldhappiness.report/", target = "_blank")),
+            tags$li(a("World Bank Open Data", href = "https://data.worldbank.org/", target = "_blank")),
             tags$li("Wikipedia pages on macroeconomic indicators (Inflation, GDP, Unemployment, etc.)")
           ),
           p("All data sources are publicly available and used strictly for academic and educational purposes.", 
@@ -327,7 +328,7 @@ ui<- page_navbar(
 )
 
 
-# Define server logic required to draw a histogram
+
 server <- function(input, output) {
 
 }
